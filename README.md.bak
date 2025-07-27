@@ -1,0 +1,103 @@
+<<<<<<< HEAD
+ DualBrowserVP 🖥️🌐
+
+## 🇬🇧 English
+
+DualBrowserVP is a lightweight Windows application that allows users to open two browser windows side-by-side. Ideal for multitasking, research, and comparing content efficiently.
+
+## 🇩🇪 Deutsch
+
+DualBrowserVP ist eine schlanke Windows-Anwendung, mit der Benutzer zwei Browserfenster nebeneinander öffnen können. Perfekt für Multitasking, Recherchen und einen schnellen Vergleich von Inhalten.
+
+## 🇷🇸 Srpski
+
+DualBrowserVP je lagana Windows aplikacija koja omogućava korisnicima da otvore dva prozora brauzera jedan pored drugog. Idealna za multitasking, istraživanje i efikasno upoređivanje sadržaja.
+
+---
+
+## 📥 Download
+
+👉 [Download DualBrowserVP.exe](./DualBrowserVP.exe)
+
+---
+
+## 🖼️ Screenshot
+
+![DualBrowserVP preview](img/DualBrowserVP_preview.png)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE.txt](./LICENSE.txt) file for details.
+=======
+# DualBrowser
+
+**Version / Version / Verzija:** 1.0  
+**License / Lizenz / Licenca:** Freeware  
+**Platform / Plattform / Platforma:** Windows (.exe application)  
+**Languages / Sprachen / Jezici:** 🇬🇧 English • 🇩🇪 Deutsch • 🇷🇸 Srpski
+
+---
+
+## 🇬🇧 English
+
+### 🔎 Description
+**DualBrowser** is a simple and efficient tool for parallel web search. You enter a keyword, and the results are displayed simultaneously in two windows, each powered by a different search engine (e.g., Google and Bing).  
+
+Perfect for quickly comparing information, saving time, and getting broader insights without switching tabs manually.
+
+### 🔑 Features
+- Dual integrated search windows  
+- Real-time results from multiple sources  
+- Language selection: English, German, Serbian  
+- Lightweight, easy-to-use interface – portable if no installation required
+
+### 👤 Ideal users
+Students • Researchers • Journalists • All curious minds on the web
+
+### ⚙️ How to use
+Run the `.exe` file, select your language, and start searching — instant side-by-side results!
+
+---
+
+## 🇩🇪 Deutsch
+
+### 🔎 Beschreibung
+**DualBrowser** ist ein einfacher und effizienter Websuch-Tool für paralleles Suchen. Gib einen Begriff ein und die Ergebnisse erscheinen gleichzeitig in zwei Fenstern – jeweils über eine andere Suchmaschine (z. B. Google und Bing).  
+
+Ideal für schnellen Vergleich von Informationen und zeitsparendes Browsen ohne manuelles Wechseln der Tabs.
+
+### 🔑 Funktionen
+- Zwei integrierte Suchfenster  
+- Echtzeit-Ergebnisse aus verschiedenen Quellen  
+- Sprachauswahl: Englisch, Deutsch, Serbisch  
+- Leichtes Interface – portable Version ohne Installation verfügbar
+
+### 👤 Empfohlene Nutzer
+Studierende • Forscher • Journalist:innen • Alle mit Wissensdurst im Web
+
+### ⚙️ Anwendung
+`.exe` starten, Sprache auswählen und los geht’s – parallele Ergebnisse sofort!
+
+---
+
+## 🇷🇸 Srpski
+
+### 🔎 Opis
+**DualBrowser** je jednostavan i efikasan alat za paralelno pretraživanje interneta. Uneseš pojam, a rezultati se prikazuju istovremeno u dva prozora — svaki sa drugom pretraživačkom mašinom (npr. Google i Bing).  
+
+Savršen za brzo poređenje informacija i štednju vremena, bez ručnog menjanja tabova.
+
+### 🔑 Karakteristike
+- Dva integrisana pretraživačka prozora  
+- Rezultati iz više izvora u realnom vremenu  
+- Izbor jezika: engleski, nemački, srpski  
+- Jednostavan interfejs – bez instalacije ako je portable verzija
+
+### 👤 Idealni korisnici
+Studenti • Istraživači • Novinari • Ljubitelji pametnog interneta
+
+### ⚙️ Korišćenje
+Pokreni `.exe` fajl, izaberi jezik i počni sa pretragom — rezultati dolaze paralelno!
+>>>>>>> 554ced3 (v1.0 – Migrated to clean Git repo)
