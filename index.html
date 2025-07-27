@@ -3,75 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dual Browser VP</title>
+  <title>Dual Browser VP - Download</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #000; /* crna pozadina */
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      color: #ffd700; /* zlatna boja teksta */
+      background: #000;
+      color: #d4af37;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
-
     header {
-      background-color: #111;
-      padding: 20px;
+      background-color: #1c1c1c;
+      color: #d4af37;
+      padding: 30px 20px;
       text-align: center;
     }
-
     .logo-container {
       display: flex;
       justify-content: center;
-      align-items: center;
       gap: 20px;
+      margin-bottom: 15px;
       flex-wrap: wrap;
-      margin-bottom: 10px;
+      align-items: center;
     }
-
     .logo-container img {
-      height: 80px;
+      max-height: 80px;
+      height: auto;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #d4af37;
+      transition: transform 0.3s ease;
     }
-
+    .logo-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ffd700;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.8em;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 4px #b8860b;
+    }
+    p {
+      font-size: 1.1em;
+      margin: 10px 0 0 0;
+      text-shadow: 1px 1px 3px #8b7500;
+    }
     main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 40px 20px;
-      max-width: 700px;
-      margin: auto;
+      background: #121212;
+      max-width: 750px;
+      margin: 30px auto 40px auto;
+      box-shadow: 0 0 20px #d4af37;
+      border-radius: 12px;
+    }
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #d4af37;
+      text-shadow: 0 0 10px #ffd700;
       text-align: center;
     }
-
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+      max-width: 700px;
+    }
     .button {
-      display: inline-block;
-      background-color: #ffd700; /* zlatna dugmad */
-      color: #000; /* crni tekst */
+      flex: 1 1 220px;
+      background-color: #b8860b;
+      color: #000;
       text-decoration: none;
-      padding: 15px 25px;
+      font-weight: 700;
+      padding: 14px 30px;
       border-radius: 8px;
-      font-size: 1rem;
-      margin: 15px;
-      transition: background-color 0.3s ease;
+      box-shadow: 0 0 10px #ffd700;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      font-size: 1.08em;
+      text-align: center;
+      display: inline-block;
+      user-select: none;
+      position: relative;
     }
-
-    .button:hover {
-      background-color: #e6c200;
+    .button:hover,
+    .button:focus {
+      background-color: #ffd700;
+      box-shadow: 0 0 20px #fffacd;
+      color: #000;
+      outline: none;
     }
-
+    .button .caption {
+      display: block;
+      font-size: 0.8em;
+      margin-top: 6px;
+      color: #6b5300;
+      font-weight: 600;
+      text-shadow: none;
+    }
+    .button span.flag {
+      margin-left: 9px;
+      font-size: 1.2em;
+      vertical-align: middle;
+    }
     footer {
       text-align: center;
-      padding: 20px;
       font-size: 0.9em;
-      color: #999;
+      color: #d4af37;
+      padding: 18px 10px;
+      border-top: 1px solid #444;
+      background: #121212;
+      text-shadow: 1px 1px 3px #8b7500;
+      user-select: none;
     }
-  .auto-style1 {
-	font-family: "Segoe UI";
-	color: #FFFF00;
-}
-.auto-style2 {
-	color: #66CCFF;
-}
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    footer a:hover,
+    footer a:focus {
+      text-decoration: underline;
+    }
+    .auto-style1 { font-style: normal; }
+    .auto-style2 { font-weight: 600; }
   </style>
 </head>
 <body>
-
   <header>
     <div class="logo-container">
       <img src="https://vaso-pavlicic.de/Dual_browser_DE.png" alt="Glavni logo" />
@@ -82,17 +150,41 @@
   </header>
 
   <main>
-    <h2>Preuzimanje</h2>
-    <a class="button" href="https://github.com/VasoVale/DualBrowserVP" target="_blank">GitHub repozitorijum</a>
-    <a class="button" href="https://vaso-pavlicic.de/downloads/dual_browser-int.rar" download>Direktno preuzimanje (.rar)</a>
+    <h2>Preuzimanje / Download / Herunterladen</h2>
+    <div class="button-group">
+      <a class="button" href="https://github.com/VasoVale/DualBrowserVP" target="_blank" rel="noopener noreferrer" aria-label="Pregled repozitorijuma">
+        GitHub
+        <span class="caption">Repository</span>
+      </a>
+     <a class="button" href="https://github.com/VasoVale/DualBrowserVP/releases/download/V1.1/DualBrowserVP.exe" download>
+   GitHub
+        <span class="caption">Direct Download (.exe)</span>
+      </a>
+      <a class="button" href="https://vaso-pavlicic.de/downloads/dual_browser-sr.rar" download>
+        Preuzimanje (.rar) <span class="flag">🇲🇪</span>
+      </a>
+      <a class="button" href="https://vaso-pavlicic.de/downloads/dual_browser-de.rar" download>
+        Download (.rar) Deutsch <span class="flag">🇩🇪</span>
+      </a>
+      <a class="button" href="https://vaso-pavlicic.de/downloads/dual_browser-eng.rar" download>
+        Download (.rar) English <span class="flag">🇬🇧</span>
+      </a>
+      <a class="button" href="https://vaso-pavlicic.de/downloads/dual_browser-int.rar" download>
+        Download Int. (.rar)
+        <span class="flag">🇲🇪</span>
+        <span class="flag">🇩🇪</span>
+        <span class="flag">🇬🇧</span>
+      </a>
+    </div>
   </main>
 
   <footer>
-    <p><span lang="de"><span class="auto-style1">
-	<a href="https://vaso-pavlicic.de"><span class="auto-style2">Vasova 
-	strana-Vaso Seite</span></a></span> </span></p>
+    <p><span lang="de" class="auto-style1">
+      <a href="https://vaso-pavlicic.de" target="_blank" rel="noopener noreferrer" class="auto-style2">
+        Vasova strana-Vaso Seite
+      </a>
+    </span></p>
     <p class="auto-style1">&copy; 2025 VasoVale<span lang="de"> Pavlicic </span>Sva prava zadržana.</p>
   </footer>
-
 </body>
 </html>
