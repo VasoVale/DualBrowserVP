@@ -1,0 +1,21 @@
+git add setup_int.exe
+# Ignoriši sve ZIP fajlove osim jednog određenog
+*.zip
+!dual_browser-int.zip
+
+# Ignoriši build foldere i .exe fajlove (ako ne želiš da ih verzionišeš)
+bin/
+obj/
+*.exe
+
+# Ignoriši privremene i sistemske fajlove
+*.log
+*.tmp
+*.user
+*.suo
+*.cache
+Thumbs.db
+.DS_Store
+
+# Ignoriši VS Code postavke (ako koristiš)
+.vscode/

@@ -1,31 +1,28 @@
- DualBrowserVP 🖥️🌐
+## 🚀 DualBrowserVP
 
-## 🇬🇧 English
+Jedinstveni alat za paralelno surfanje – za produktivnost koja ne poznaje multitasking granice.
 
-DualBrowserVP is a lightweight Windows application that allows users to open two browser windows side-by-side. Ideal for multitasking, research, and comparing content efficiently.
+### ✨ Verzija
+v1.0 – Migrated to clean Git repo
 
-## 🇩🇪 Deutsch
+### 📄 License
+MIT – slobodno koristi, modifikuj i deli.
 
-DualBrowserVP ist eine schlanke Windows-Anwendung, mit der Benutzer zwei Browserfenster nebeneinander öffnen können. Perfekt für Multitasking, Recherchen und einen schnellen Vergleich von Inhalten.
+### 🧭 Uputstvo
+1. Pokreni `DualBrowserVP.exe`
+2. Unesi dva URL-a
+3. Uživaj u paralelnom prikazu
 
-## 🇷🇸 Srpski
-
-DualBrowserVP je lagana Windows aplikacija koja omogućava korisnicima da otvore dva prozora brauzera jedan pored drugog. Idealna za multitasking, istraživanje i efikasno upoređivanje sadržaja.
-
----
-
-## 📥 Download
-
-👉 [Download DualBrowserVP.exe](./DualBrowserVP.exe)
-
----
-
-## 🖼️ Screenshot
-
-![DualBrowserVP preview](img/DualBrowserVP_preview.png)
+### 📦 Repo sadrži
+- `.gitignore`
+- `README.md`
+- `License.txt`
+- `Dual_browser_DE.png`
 
 ---
 
-## 📄 License
+Kad sve snimiš, uradi:
 
-This project is licensed under the MIT License – see the [LICENSE.txt](./LICENSE.txt) file for details.
+```bash
+git add README.md
+git rebase --continue
