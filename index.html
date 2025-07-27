@@ -2,58 +2,94 @@
 <html lang="sr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dual Browser VP</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
     header {
-      background-color: #007acc;
+      background-color: #0055a5;
       color: white;
       padding: 20px;
       text-align: center;
     }
     main {
-      margin-top: 20px;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .download-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .status {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #d9534f;
     }
     footer {
-      margin-top: 40px;
       text-align: center;
+      padding: 20px;
       color: #777;
     }
-    a {
-      color: #007acc;
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
       text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
     }
-    a:hover {
-      text-decoration: underline;
+    a.button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Dobrodošli u Dual Browser VP</h1>
-    <p>Vaša eksperimentalna platforma za pretragu</p>
+    <h1>Dual Browser VP</h1>
+    <p>Preuzmite aplikaciju za paralelno surfovanje</p>
   </header>
 
   <main>
-    <h2>O projektu</h2>
-    <p>Dual Browser VP je jednostavan HTML primer koji demonstrira osnovne funkcionalnosti dvojnog prikaza sadržaja.</p>
-
-    <h2>Linkovi</h2>
-    <ul>
-      <li><a href="https://github.com/VasoVale/DualBrowserVP" target="_blank">Repo na GitHub-u</a></li>
-      <li><a href="#">Kontakt</a></li>
-    </ul>
+    <div class="download-section">
+      <h2>Preuzimanje</h2>
+      <p>Pokušavamo da proverimo dostupnost GitHub repozitorijuma...</p>
+      <div id="status" class="status">Provera u toku...</div>
+      <a id="downloadLink" class="button" href="#" target="_blank">Preuzmi DualBrowser</a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 VasoVale. Sva prava zadržana.</p>
   </footer>
+
+  <script>
+    const githubURL = "https://github.com/VasoVale/DualBrowserVP";
+    const fallbackURL = "https://vaso-pavlicic.de/downloads/dual_browser-int.rar";
+
+    fetch(githubURL, { method: 'HEAD' })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById("status").textContent = "GitHub je dostupan.";
+          document.getElementById("downloadLink").href = githubURL;
+          document.getElementById("downloadLink").textContent = "Idi na GitHub";
+        } else {
+          throw new Error("GitHub nije dostupan");
+        }
+      })
+      .catch(() => {
+        document.getElementById("status").textContent = "GitHub nije dostupan. Koristite alternativni link:";
+        document.getElementById("downloadLink").href = fallbackURL;
+        document.getElementById("downloadLink").textContent = "Preuzmi sa vase-pavlicic.de";
+      });
+  </script>
 </body>
 </html>
